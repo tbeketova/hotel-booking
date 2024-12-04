@@ -18,9 +18,9 @@ generateHotels(popularHotels);
 // Находим кнопку "View All"
 const viewAllButton = document.querySelector('.popular-hotels__button');
 viewAllButton.addEventListener('click', function() {
-  const existingList = document.querySelector('.popular-hotels__list');
-  if (existingList) {
-    existingList.remove(); // Удаляем существующий список
+  const popularList = document.querySelector('.popular-hotels__list');
+  if (popularList) {
+    popularList.remove(); // Удаляем существующий список
   }
   generateHotels(hotels);
 });
