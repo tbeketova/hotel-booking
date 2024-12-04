@@ -5,14 +5,14 @@ import { generateHotels } from './js/generate-hotels.js';
 
 
 // Фильтруем только популярные отели
-function isPopularHotel(hotel) {
+function popularHotel(hotel) {
   if (hotel.popular === true) {
     return true;
   } else {
     return false;
   }
 }
-const popularHotels = hotels.filter(isPopularHotel);
+const popularHotels = hotels.filter(popularHotel);
 generateHotels(popularHotels);
 
 
