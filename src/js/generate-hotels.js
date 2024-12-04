@@ -1,17 +1,26 @@
 export function generateHotels(hotels) {
   const listHotels = document.createElement('ul');
+
   hotels.forEach(hotel => {
     const itemHotel = document.createElement('li');
     const imageHotel = document.createElement('img');
-    const titleHotel = document.createElement('h2');
+    const titleHotel = document.createElement('h3');
+    const addressHotel = document.createElement('p');
 
-    imageHotel.setAttribute('src', hotel.img);
+    listHotels.setAttribute('class', 'popular-hotels__list');
+    itemHotel.setAttribute('class', 'popular-hotels__item');
+    imageHotel.setAttribute('src', hotel.img);  // hotel.img — это обращение к свойству img объекта hotel
     imageHotel.setAttribute('width', 300);
-    imageHotel.setAttribute('class', 'image__hotel');
-    titleHotel.textContent = hotel.title;
+    imageHotel.setAttribute('height', 209);
+    titleHotel.textContent = hotel.title;  //Устанавливается текстовое содержимое элемента <h2>, чтобы отображать название отеля (hotel.title)
+    addressHotel.setAttribute('class', 'popular-hotels__address');
+    addressHotel.textContent = hotel.address;
+
+    listHotels.appendChild(itemHotel)
     itemHotel.appendChild(imageHotel)
     itemHotel.appendChild(titleHotel)
-    listHotels.appendChild(itemHotel)
+    itemHotel.appendChild(addressHotel)
   });
+
   document.querySelector('main').appendChild(listHotels)
 }

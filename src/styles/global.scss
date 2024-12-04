@@ -9,10 +9,10 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: var.$black;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;    //Отключает синтезирование стилей шрифтов браузером, таких как курсив или жирный шрифт. Это помогает использовать только те шрифты, которые явно указаны
+  text-rendering: optimizeLegibility;  //Оптимизирует рендеринг текста для улучшения читаемости, особенно для больших шрифтов. Браузер будет использовать методы, улучшающие отображение шрифтов (например, сглаживание)
+  -webkit-font-smoothing: antialiased;  // Оптимизирует сглаживание шрифтов для браузеров на основе WebKit (например, Chrome, Safari). Сглаживание antialiased делает края шрифтов более чёткими.
+  -moz-osx-font-smoothing: grayscale;  // Определяет сглаживание шрифтов для систем macOS в браузерах на основе Gecko (например, Firefox). Значение grayscale использует сглаживание на основе оттенков серого для более мягкого рендера шрифтов.
 }
 
 a {
@@ -60,5 +60,5 @@ h1 {
 }
 
 .image__hotel {
-  border: 50px solid red;
+  border: 5px solid red;
 }

@@ -3,39 +3,82 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Hotel bookong</title>
     </head>
     <body class="page__body">
         <div id="app" class="page__content">
             <header class="header">
                 <div class="container">
-                    <button class="counter"></button>
-                    <a href="src/pages/catalog.html">catalog</a>
+                    <nav class="header__nav navigation">
+                        <button class="navigation__toggle" type="button">
+                            <span>Открьiть меню</span>
+                        </button>
+                        <ul class="navigation__list">
+                            <li>
+                                <a href="src/pages/catalog.html">Booking</a>
+                            </li>
+                            <li>
+                                <a href="src/pages/catalog.html">Facilities</a>
+                            </li>
+                            <li>
+                                <a href="src/pages/catalog.html">Location</a>
+                            </li>
+                            <li>
+                                <a href="src/pages/catalog.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="src/pages/catalog.html">Booking</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="header__nav-user" type="button">Login</button>   
                 </div>
             </header>
             <main class="main">
-                <section>
+                <section class="intro">
                     <div class="container">
-                        <p>affsdddddd</p>
-                        <p>affsdddddd</p>
-                        <p>affsdddddd</p>
-                        <p>affsdddddd</p>
-                        <p>affsdddddd</p>
-                        <p>affsdddddd</p>
-                        <p>affsdddddd</p>
-                        <p>affsdddddd</p>
-                        <p>affsdddddd</p>
-                        <p>affsdddddd</p>
-                        <svg width="50" height="50">
-                            <use href="/assets/vectors/sprite.svg#shield"></use>
-                        </svg>
-                        <img src="/assets/images/avatar-1.avif323" alt="">
+                        <div class="intro__text">
+                            <h1>Find your perfect place to stay</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <a href="#">Watch video</a>
+                        </div>
+                        <img src="" alt="" width="" height="">
+                        <div class="intro__search search">
+                            <ul class="search__list">
+                                <li>
+                                    <p>Location</p>
+                                    <span>United States</span>
+                                </li>
+                                <li>
+                                    <p>Chack in</p>
+                                    <span>10 Jun 2021</span>
+                                </li>
+                                <li>
+                                    <p>Chack out</p>
+                                    <span>15 Jun 2021</span>
+                                </li>
+                                <li>
+                                    <p>Rooms for</p>
+                                    <p>1 room, 2 guests</p>
+                                </li>
+                            </ul>
+                            <button type="button">Search...</button>
+                        </div>
                     </div>
+                </section>
+                <section class="popular-hotels">
+                    <h2 class="popular-hotels__title">Our most popular Hotels</h2>
+                    <p class="popular-hotels__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <button type="button">View All</button>
                 </section>
             </main>
             <footer class="footer">
                 <div class="container">
                     <h2>FOOTER</h2>
+                    <!-- <svg width="50" height="50">
+                            <use href="/assets/vectors/sprite.svg#shield"></use>
+                        </svg>
+                        <img src="/assets/images/avatar-1.avif323" alt=""> -->
                 </div>
             </footer>
         </div>
