@@ -15,7 +15,15 @@ function popularHotel(hotel) {
 const popularHotels = hotels.filter(popularHotel);
 generateHotels(popularHotels);
 
-
+// Находим кнопку "View All"
+const viewAllButton = document.querySelector('.popular-hotels__button');
+viewAllButton.addEventListener('click', function() {
+  const existingList = document.querySelector('.popular-hotels__list');
+  if (existingList) {
+    existingList.remove(); // Удаляем существующий список
+  }
+  generateHotels(hotels);
+});
 
 /* setTimeout(() => generateHotels(hotels), 1000) */  //используется для того, чтобы задержать выполнение вызова функции generateHotels(hotels) на определённое количество времени — в данном случае на 1000 миллисекунд (или 1 секунду
 /* initTabs(); */

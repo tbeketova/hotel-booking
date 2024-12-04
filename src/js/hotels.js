@@ -1,6 +1,6 @@
 export const hotels = [
   {
-    img: './public/assets/images/avatar-1.webp',
+    img: 'https://i.tez-tour.travel/img/hotels/112768/0.jpg',
     address: 'London NW8 7JT England',
     title: 'Danubius Hotel Regents Park',
     price: 200,
