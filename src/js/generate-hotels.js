@@ -22,5 +22,5 @@ export function generateHotels(hotels) {
     itemHotel.appendChild(addressHotel)
   });
 
-  document.querySelector('main').appendChild(listHotels)
+  document.querySelector('.popular-hotels .container').appendChild(listHotels)
 }

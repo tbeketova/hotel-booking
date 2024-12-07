@@ -1,2 +1,6 @@
 @use '/src/styles/global'as *;
 @use '/src/styles/variables'as *;
+@use '/src/styles/fonts.scss' as *;
+@use '/src/styles/visually-hidden.scss' as *;
+@use '/src/styles/blocks/header.scss' as *;
+@use '/src/styles/blocks/navigation.scss' as *;

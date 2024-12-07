@@ -9,29 +9,28 @@
         <div id="app" class="page__content">
             <header class="header">
                 <div class="container">
-                    <nav class="header__nav navigation">
-                        <button class="navigation__toggle" type="button">
-                            <span>Открьiть меню</span>
-                        </button>
-                        <ul class="navigation__list">
-                            <li>
-                                <a href="src/pages/catalog.html">Booking</a>
-                            </li>
-                            <li>
-                                <a href="src/pages/catalog.html">Facilities</a>
-                            </li>
-                            <li>
-                                <a href="src/pages/catalog.html">Location</a>
-                            </li>
-                            <li>
-                                <a href="src/pages/catalog.html">Contact</a>
-                            </li>
-                            <li>
-                                <a href="src/pages/catalog.html">Booking</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <button class="header__nav-user" type="button">Login</button>   
+                    <div class="header__wrapper">
+                        <nav class="header__nav navigation">
+                            <button class="navigation__toggle" type="button">
+                                <span class="visually-hidden">Открьiть меню</span>
+                            </button>
+                            <ul class="navigation__list">
+                                <li>
+                                    <a href="src/pages/catalog.html">Booking</a>
+                                </li>
+                                <li>
+                                    <a href="src/pages/catalog.html">Facilities</a>
+                                </li>
+                                <li>
+                                    <a href="src/pages/catalog.html">Location</a>
+                                </li>
+                                <li>
+                                    <a href="src/pages/catalog.html">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="header__nav-user" type="button">Login</button>
+                    </div>
                 </div>
             </header>
             <main class="main">
@@ -67,18 +66,30 @@
                     </div>
                 </section>
                 <section class="popular-hotels">
-                    <h2 class="popular-hotels__title">Our most popular Hotels</h2>
-                    <p class="popular-hotels__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <button class="popular-hotels__button" id ='viewAllButton' type="button">View All</button>
+                    <div class="container">
+                        <h2 class="popular-hotels__title">Our most popular Hotels</h2>
+                        <p class="popular-hotels__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <button class="popular-hotels__button" id ='viewAllButton' type="button">View All</button>
+                    </div>
+                </section>
+                <section class="services"> 
+                    <div class="container">
+                        <h2>We do our best facilities provide you</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
+                        <button type="button">Contact Now</button>
+                    </div>
                 </section>
             </main>
             <footer class="footer">
                 <div class="container">
                     <h2>FOOTER</h2>
-                    <!-- <svg width="50" height="50">
-                            <use href="/assets/vectors/sprite.svg#shield"></use>
-                        </svg>
-                        <img src="/assets/images/avatar-1.avif323" alt=""> -->
+                    <svg width="20" height="20" aria-label="Рейтинг">
+                        <use href="/assets/vectors/sprite.svg#citate"></use>
+                    </svg>
+                    <!-- <svg width="50" height="50" aria-label="Рейтинг">
+                        <use href="/assets/vectors/sprite.svg#shield"></use>
+                    </svg> -->
+                        <img src="/assets/images/avatar-1.avif323" alt="">
                 </div>
             </footer>
         </div>

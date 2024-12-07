@@ -1,13 +1,13 @@
 @use 'variables'as var;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var.$primary-font;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: var.$black;
+  color: #000000;
+  /* background-color: var.$black; */
 
   font-synthesis: none;    //Отключает синтезирование стилей шрифтов браузером, таких как курсив или жирный шрифт. Это помогает использовать только те шрифты, которые явно указаны
   text-rendering: optimizeLegibility;  //Оптимизирует рендеринг текста для улучшения читаемости, особенно для больших шрифтов. Браузер будет использовать методы, улучшающие отображение шрифтов (например, сглаживание)
@@ -15,14 +15,26 @@
   -moz-osx-font-smoothing: grayscale;  // Определяет сглаживание шрифтов для систем macOS в браузерах на основе Gecko (например, Firefox). Значение grayscale использует сглаживание на основе оттенков серого для более мягкого рендера шрифтов.
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var.$base-color-text;
   text-decoration: inherit;
 }
 
 a:hover {
-  color: var.$pink_535bf2;
+  color: var.$red;
 }
 
 h1 {
@@ -34,6 +46,7 @@ h1 {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 10px;
+  border: 1px solid red;
 }
 
 .page {
@@ -57,8 +70,4 @@ h1 {
 
 .main {
   flex-grow: 1;
-}
-
-.image__hotel {
-  border: 5px solid red;
 }
