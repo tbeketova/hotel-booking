@@ -1,0 +1,33 @@
+@use './../variables' as *;
+.intro {
+  padding: 20px 0 20px 0;
+}
+
+.intro__description-title {
+  margin: 0 0 15px 0;
+  font-size: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 64px;
+  }
+}
+
+.intro__description-text {
+  margin: 0 0 15px 0;
+}
+
+.intro__description-link {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.intro img {
+  position: relative;
+}
+
+.intro__search {
+  position: absolute;
+  top: 456px;
+  left: 50%;
+  transform: translateX(-50%);
+}

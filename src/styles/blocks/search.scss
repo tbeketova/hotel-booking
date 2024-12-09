@@ -1,0 +1,45 @@
+@use './../variables' as *;
+.search {
+  background-color: $white;
+  box-shadow: 0px -1px 7px 0px #002213a3;
+  border-radius: 25px;
+  padding: 26px 0 26px 0;
+}
+
+.search__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 290px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  margin-bottom: 20px;
+  
+}
+
+.search__list li {
+  width: 145px;
+  padding-left: 30px;
+
+}
+
+.search__list p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: $base-color-text;
+}
+
+.search__list span {
+  font-size: 14px;
+  line-height: 16px;
+  color: $сsecondary-color-text;
+}
+
+.search__list-button {
+  width: 150px;
+  margin: 0 auto;
+  padding: 20px;
+}

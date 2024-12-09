@@ -4,6 +4,7 @@ import { hotels } from "./js/hotels.js";
 import { generateHotels } from './js/generate-hotels.js';
 import { services } from './js/services.js';
 import {generateServices} from './js/generate-services.js';
+import {showBurgerMenu} from './js/show-burger-menu.js';
 
 
 
@@ -23,6 +24,7 @@ viewAllButton.addEventListener('click', function() {
 /* ./Фильтруем только популярные отели, лучше использовать метод spred оператор */
 
 generateServices(services);
+showBurgerMenu();
 
 /* setTimeout(() => generateHotels(hotels), 1000) */  //используется для того, чтобы задержать выполнение вызова функции generateHotels(hotels) на определённое количество времени — в данном случае на 1000 миллисекунд (или 1 секунду
 /* initTabs(); */

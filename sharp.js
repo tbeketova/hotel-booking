@@ -4,7 +4,7 @@ import path from 'path';
 
 const convertImages = async (inputDir, outputDir) => {
   const files = fs.readdirSync(inputDir).filter(file =>
-    file.endsWith('.jpg') || file.endsWith('.png')
+    file.endsWith('.jpg') || file.endsWith('.png') || file.endsWith('.jpeg')
   );
 
   for (const file of files) {
