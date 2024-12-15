@@ -1,10 +1,11 @@
 @use './../variables' as *;
 .intro {
-  padding: 20px 0 20px 0;
+  padding: 20px 0 0 0;
+  background-color: $accent-color-light;
 }
 
 .intro__description-title {
-  margin: 0 0 15px 0;
+  margin: 0 0 25px 0;
   font-size: 37px;
 
   @media (min-width: $tablet-width) {
@@ -13,21 +14,58 @@
 }
 
 .intro__description-text {
-  margin: 0 0 15px 0;
+  margin: 0 0 25px 0;
 }
 
 .intro__description-link {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 600;
   display: block;
+  padding-left: 50px;
   margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
 }
 
-.intro img {
+.intro__description-link::before {
+  content: " ";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  background-image: url("../../../public/assets/vectors/triangle-right.svg");
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
+.intro__description-link::after {
+  content: " ";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -4px;
+  left: 2px;
+  border-radius: 50px;
+  background-color: $white;
+  border: 1px solid #E5E1DA;
+}
+
+.intro__description-link:hover {
+  opacity: 0.4;
+}
+
+.intro__img {
   position: relative;
 }
 
 .intro__search {
+  width: 80%;
+  min-width: 290px;
   position: absolute;
-  top: 456px;
+  top: 45%;
   left: 50%;
   transform: translateX(-50%);
 }

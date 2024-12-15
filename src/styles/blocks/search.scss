@@ -3,24 +3,27 @@
   background-color: $white;
   box-shadow: 0px -1px 7px 0px #002213a3;
   border-radius: 25px;
-  padding: 26px 0 26px 0;
+  padding: calc(15px + 5vw) 0 calc(10px + 5vw) 0;
 }
 
 .search__list {
   list-style-type: none;
-  margin: 0 auto 20px;
+  margin: 0 auto;
+  margin-bottom: calc(10px + 5vw);
+  /* padding: 0 calc(0px + 1vw) 0 calc(0px + 1vw); */
   padding: 0;
-  width: 290px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  row-gap: 10px;
+  /* gap: calc(0px + 1vw); */
+  row-gap: calc(20px + 1vw);
+  /* row-gap: 22px; */
   position: relative;
-  
 }
 
 .search__item {
-  width: 145px;
+  width: clamp(140px, 5vw, 200px);
+  /* width: 145px; */
   padding-left: 30px;
   position: relative;
 }

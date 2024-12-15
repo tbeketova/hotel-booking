@@ -14,7 +14,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
   /* Эффект матового стекла */
-  background: rgba(255, 255, 255, 0.7); /* Полупрозрачный белый фон */
+  background: rgba(255, 255, 255, 0.5); /* Полупрозрачный белый фон */
   backdrop-filter: blur(10px); /* Размытие */
   -webkit-backdrop-filter: blur(10px); /* Поддержка для Safari */
   border: 1px solid rgba(255, 255, 255, 0.3); /* Лёгкая граница для стеклянного эффекта */
@@ -52,7 +52,7 @@
 
 .navigation--nojs .navigation__wrapper {
   @media (max-width: $mobile-width-only) {
-    display: block;
+    display: flex;
   }
 }
 
@@ -76,6 +76,11 @@
   line-height: 24px;
   color: $base-color-text;
   padding: 20px;
+}
+
+.navigation__list a:hover,
+.navigation__list a:focus {
+  opacity: 0.5;
 }
 
 .navigation__toggle {

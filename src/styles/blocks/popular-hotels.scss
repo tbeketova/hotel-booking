@@ -1,16 +1,43 @@
+@use './../variables' as *;
 .popular-hotels {
-  padding: 140px 0 0 0;
+  padding-top: calc(192px - 10vw);
 }
 
 .popular-hotels__title {
   margin: 0 0 20px;
-  text-align: center;
 }
 
 .popular-hotels__subtitle {
-  margin: 0;
+  font-size: 16px;
+  line-height: 28px;
+  color: $сsecondary-color-text;
+  margin: 0 0 20px;
+}
+
+.popular-hotels__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
 .popular-hotels__button {
-  
+  font-size: 16px;
+  line-height: 28px;
+  color: $accent-color;
+  width: 110px;
+  align-self: flex-end;
+  padding: 6px 26px;
+  background-color: rgba(36, 171, 112, 0.1);
+  border-radius: 280px;
+  margin-bottom: 20px;
+}
+
+.popular-hotels__button:hover {
+  opacity: 0.5;
+}
+
+.popular-hotels__list  {
+  padding: 0;
+  margin: 0;
+
 }

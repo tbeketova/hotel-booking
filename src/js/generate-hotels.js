@@ -6,6 +6,7 @@ export function generateHotels(hotels) {
     const imageHotel = document.createElement('img');
     const titleHotel = document.createElement('h3');
     const addressHotel = document.createElement('p');
+    const priceHotel = document.createElement('p');
 
     listHotels.setAttribute('class', 'popular-hotels__list');
     itemHotel.setAttribute('class', 'popular-hotels__item');
@@ -15,11 +16,13 @@ export function generateHotels(hotels) {
     titleHotel.textContent = hotel.title;  //Устанавливается текстовое содержимое элемента <h2>, чтобы отображать название отеля (hotel.title)
     addressHotel.setAttribute('class', 'popular-hotels__address');
     addressHotel.textContent = hotel.address;
+    priceHotel.textContent = hotel.price;
 
-    listHotels.appendChild(itemHotel)
-    itemHotel.appendChild(imageHotel)
-    itemHotel.appendChild(titleHotel)
-    itemHotel.appendChild(addressHotel)
+    listHotels.appendChild(itemHotel);
+    itemHotel.appendChild(imageHotel);
+    itemHotel.appendChild(titleHotel);
+    itemHotel.appendChild(addressHotel);
+    itemHotel.appendChild(priceHotel);
   });
 
   document.querySelector('.popular-hotels .container').appendChild(listHotels)
