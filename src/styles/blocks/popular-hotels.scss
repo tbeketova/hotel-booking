@@ -4,12 +4,16 @@
 }
 
 .popular-hotels__title {
+  font-size: 20px;
+  line-height:30px;
+  font-weight: 600;
+  color: $dark;
   margin: 0 0 20px;
 }
 
 .popular-hotels__subtitle {
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 14px;
+  line-height: 18px;
   color: $сsecondary-color-text;
   margin: 0 0 20px;
 }
@@ -37,7 +41,22 @@
 }
 
 .popular-hotels__list  {
+  list-style-type: none;
   padding: 0;
   margin: 0;
+}
 
+.popular-hotels__item {
+  padding-bottom: 38px;
+  background-color: $light-dark;
+  margin-bottom: 20px;
+}
+
+.popular-hotels__rating {
+  width: 131px;
+  border: 1px solid $accent-color;
+}
+
+.popular-hotels__stars {
+  margin: 0;
 }

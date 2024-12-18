@@ -5,7 +5,8 @@ import { generateHotels } from './js/generate-hotels.js';
 import { services } from './js/services.js';
 import {generateServices} from './js/generate-services.js';
 import {showBurgerMenu} from './js/show-burger-menu.js';
-
+import{ icons } from './js/test.js';
+import {generateIcons} from './js/generate-test.js';
 
 
 /* Фильтруем только популярные отели, лучше использовать spred оператор или slice filter подходит для select*/
@@ -25,6 +26,7 @@ viewAllButton.addEventListener('click', function() {
 
 generateServices(services);
 showBurgerMenu();
+generateIcons(icons);
 
 /* setTimeout(() => generateHotels(hotels), 1000) */  //используется для того, чтобы задержать выполнение вызова функции generateHotels(hotels) на определённое количество времени — в данном случае на 1000 миллисекунд (или 1 секунду
 /* initTabs(); */

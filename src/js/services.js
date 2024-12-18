@@ -1,14 +1,14 @@
 export const services = [
   {
-    icon: 'citate',
+    icon: './../../public/assets/vectors/sitate.svg',
     title: 'Private Workspace'
   },
   {
-    icon: 'parking',
+    icon: './../../public/assets/vectors/sitate.svg',
     title: 'Parking Area'
   },
   {
-    icon: 'breakfast',
+    icon: './../../public/assets/vectors/sitate.svg',
     title: 'Breakfast'
   },
   {

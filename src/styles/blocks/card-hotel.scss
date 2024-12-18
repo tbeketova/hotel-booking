@@ -1,0 +1,29 @@
+@use './../variables' as *;
+.card-hotel__img {
+  margin-bottom: 24px;
+}
+
+.card-hotel__title {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  margin: 0 0 24px;
+}
+
+.card-hotel__address {
+  font-size: 12px;
+  line-height: 18px;
+  color: $accent-color;
+  margin: 0 0 8px;
+}
+
+.card-hotel__price {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 0 10px;
+}
+
+.card-hotel__rating {
+  font-size: 14px;
+  line-height: 16px;
+}
