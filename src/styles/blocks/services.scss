@@ -1,12 +1,40 @@
 @use './../variables' as *;
 .services {
+
+  @media (min-width: $desktop-width) {
+    padding: 147px 0 120px 0;
+  }
+
+  &__box {
+    display: grid;
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 434px 1fr;
+      grid-template-rows: min-content min-content 1fr;
+      align-items: start;
+    }
+  }
+
   &__title {
     width: 240px;
     font-size: 20px;
-    line-height:30px;
+    line-height: 30px;
     font-weight: 600;
     color: $dark;
     margin: 0 0 20px;
+
+    @media (min-width: $tablet-width){
+      width: 624px;
+    }
+
+    @media (min-width: $desktop-width){
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      margin-bottom: 30px;
+      width: 411px;
+      font-size: 40px;
+      line-height: 50px;
+    }
   }
 
   &__description {
@@ -14,6 +42,15 @@
     line-height: 18px;
     color: $сsecondary-color-text;
     margin: 0 0 20px;
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      width: 420px;
+      font-size: 16px;
+      line-height: 28px;
+      margin: 0 0 50px;
+    }
   }
 
   &__list {
@@ -23,13 +60,24 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-between;
-    width: 280px;
+    min-width: 300px;
+
+    @media (min-width: $tablet-width) {
+      width: 624px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 845px;
+      grid-column: 2 / 3;
+      grid-row: 1 / -1;
+      gap: 24px;
+      justify-self: end;
+    }
   }
 
   &__item {
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
     background-image: url('/public/assets/vectors/citate.svg');
     background-repeat: no-repeat;
     background-size: 40px 40px;
@@ -41,13 +89,27 @@
     text-align: center;
     cursor: pointer;
 
+    @media (min-width: $desktop-width){
+      width: 193px;
+      height: 193px;
+      background-size: 40px 40px;
+      background-position: center top 50px;
+    }
+
     &-title {
-      width: 80px;
+      width: 105px;
       font-size: 12px;
       line-height: 16px;
       color: $base-color-text;
       margin: 0;
-      padding-top: 78px;
+      padding-top: 85px;
+
+      @media (min-width: $desktop-width){
+        width: 145px;
+        font-size: 16px;
+        line-height: 28px;
+        padding-top: 115px;
+      }
     }
   }
 
@@ -58,6 +120,7 @@
 }
 
 .services__button {
+  width: 125px;
   padding: 10px 20px;
   background-color: $accent-color;
   color: $white;
@@ -65,12 +128,25 @@
   line-height: 20px;
   border-radius: 35px;
   margin-bottom: 30px;
+  justify-self: end;
+
+  @media (min-width: $tablet-width){
+    justify-self: start;
+  }
+
+  @media (min-width: $desktop-width){
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    font-size: 16px;
+    line-height: 24px;
+    width: 135px;
+  }
 }
 
 .services__button:hover {
   opacity: 0.4;
 }
 
-.services__list svg {
+/* .services__list svg {
   border: 1px solid green;
-}
+} */

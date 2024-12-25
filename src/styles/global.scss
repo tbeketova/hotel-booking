@@ -1,7 +1,7 @@
-@use 'variables'as var;
+@use 'variables'as *;
 
 :root {
-  font-family: var.$primary-font;
+  font-family: $primary-font;
   line-height: 1.5;
   font-weight: 400;
 
@@ -29,7 +29,7 @@ img {
 
 a {
   font-weight: 500;
-  color: var.$base-color-text;
+  color: $base-color-text;
   text-decoration: inherit;
 }
 
@@ -46,6 +46,14 @@ h1 {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .page {
