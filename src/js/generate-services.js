@@ -10,7 +10,9 @@ export function generateServices(services) {
 
 
     titleService.textContent = service.title;
-    titleService.setAttribute('class', 'services__title');
+    titleService.setAttribute('class', 'services__item-title');
+
+    itemService.setAttribute('class', 'services__item');
 
     iconService.setAttribute('width', 30);
     iconService.setAttribute('height', 30);
@@ -25,5 +27,11 @@ export function generateServices(services) {
     iconService.appendChild(useElement);
   });
   
-  document.querySelector('.services .container').appendChild(listServices);
+  /* document.querySelector('.services__box').appendChild(listServices); */
+  const servicesBox = document.querySelector('.services__box');
+  if (servicesBox) {
+    servicesBox.appendChild(listServices);
+  } else {
+    console.warn('generateServices: .services__box not found in DOM');
+  }
 };

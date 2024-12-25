@@ -48,7 +48,7 @@
   }
 }
 
-.header__nav-user {
+.header__nav-button {
   padding: 10px 20px;
   background-color: $accent-color;
   color: $white;
@@ -57,6 +57,6 @@
   border-radius: 35px;
 }
 
-.header__nav-user:hover {
+.header__nav-button:hover {
   opacity: 0.4;
 }
